@@ -1,0 +1,41 @@
+.featured {
+    width: 100%;
+    padding: 8rem 0;
+    background: var(--background);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+
+.featured .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.featured .left {
+    padding-bottom: 2rem;
+}
+
+.featured .left p {
+    margin: 1.5rem 0;
+}
+
+.featured .left button {
+    align-self: flex-start;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:940px) {
+    .featured .container {
+        grid-template-columns: 1fr;
+    }
+
+    .featured .left button {
+        align-self: center;
+    }
+}

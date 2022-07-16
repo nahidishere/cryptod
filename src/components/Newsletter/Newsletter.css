@@ -1,0 +1,26 @@
+.newsletter .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    max-width: 300px;
+}
+
+.newsletter-right p {
+    margin: 2rem 0;
+}
+
+@media screen and (max-width:600px) {
+    .newsletter .container {
+        grid-template-columns: 1fr;
+    }
+}
