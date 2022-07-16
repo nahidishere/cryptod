@@ -69,6 +69,7 @@ p {
 
 .btn {
   padding: 14px 32px;
+  margin: 10px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
   color: #fff;
