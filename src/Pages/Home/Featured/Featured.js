@@ -1,16 +1,17 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Loading from '../../Shared/Loading/Loading';
 import Coin from './Coin/Coin';
 import "./Featured.css";
 
 const Featured = () => {
     const [coins, setCoins] = useState([]);
-    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=bdt&order=market_cap_desc&per_page=6&page=1&sparkline=false';
+    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false';
     useEffect(() => {
         axios.get(url).then(response => setCoins(response.data));
     }, [])
-    if (coins) {
-        console.log(coins)
+    if (!coins) {
+        return <Loading />
     }
     return (
         <section className="featured">

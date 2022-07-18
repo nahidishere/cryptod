@@ -1,5 +1,5 @@
 import React from 'react';
-import trade from "../../assets/trade.png";
+import trade from "../../../assets/trade.png";
 import "./Newsletter.css";
 
 const Newsletter = () => {
@@ -18,7 +18,7 @@ const Newsletter = () => {
                     <p>Earn up to 12% annual rewards on 30+ digital assets. Simply hold your assets in the app to automatically earn rewards at the end of each month with no lockups and no limits.</p>
                     <div className="newsletter-input">
                         <input type="email" placeholder='Enter your email' />
-                        <button className="btn">LEARN MORE</button>
+                        <button className="btn">Subscribe</button>
                     </div>
                 </div>
             </div>

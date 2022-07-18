@@ -1,0 +1,8 @@
+.currency-img {
+    display: flex;
+    justify-content: center;
+}
+
+.currency-img img {
+    width: 55px;
+}

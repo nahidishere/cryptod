@@ -1,18 +1,15 @@
 import React from "react";
-import Featured from "./components/Featured/Featured";
-import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import Newsletter from "./components/Newsletter/Newsletter";
+import { Routes, Route } from "react-router-dom";
+import AllCryptoCurrency from "./Pages/AllCryptoCurrency/AllCryptoCurrency";
+import Home from "./Pages/Home/home";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Featured />
-      <Newsletter />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/all-cryptocurrency" element={<AllCryptoCurrency />} />
+      </Routes>
     </>
   );
 }

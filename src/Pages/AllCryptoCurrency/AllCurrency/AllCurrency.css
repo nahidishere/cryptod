@@ -1,0 +1,15 @@
+.allcurrency {
+    background-color: #ecf0f1;
+    padding: 3rem 0;
+}
+
+.currencies {
+    max-width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.currencies form {
+    text-align: center;
+}

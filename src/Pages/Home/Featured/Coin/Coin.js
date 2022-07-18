@@ -11,7 +11,7 @@ const Coin = ({ coin }) => {
             </div>
             <div>
                 <h5>{name}</h5>
-                <p>{current_price.toLocaleString()}৳</p>
+                <p>${current_price.toLocaleString()}</p>
             </div>
             {
                 price_change_percentage_24h < 0 ? <span className='red'><BsFillArrowDownLeftCircleFill /> {price_change_percentage_24h}%</span>

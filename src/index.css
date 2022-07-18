@@ -67,22 +67,6 @@ p {
   font-size: 1.2;
 }
 
-.btn {
-  padding: 14px 32px;
-  margin: 10px;
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
-  color: #fff;
-  border-radius: 25px 4px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.btn:hover {
-  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
-}
-
 input {
   padding: 12px 32px;
   border: 1px solid var(--primary);
@@ -113,10 +97,6 @@ input {
   }
 
   input {
-    width: 100%;
-  }
-
-  .btn {
     width: 100%;
   }
 }

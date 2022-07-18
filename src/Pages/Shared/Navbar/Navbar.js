@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -8,12 +9,12 @@ const Navbar = () => {
     return (
         <div className="header">
             <div className="container">
-                <h2>Cryp<span className='primary'>Tod</span></h2>
+                <Link id='brand' to="/">Cryp<span className='primary'>Tod</span></Link>
                 <ul className={click ? `nav-menu active` : 'nav-menu'}>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Featured</a></li>
-                    <li><a href="/">Earn</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/all-cryptocurrency">All Cryptocurrency</Link></li>
+                    <li><Link to="/">Earn</Link></li>
+                    <li><Link to="/">Contact</Link></li>
                 </ul>
                 <div className="btn-group">
                     <button className="btn">Connect Wallet</button>
