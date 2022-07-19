@@ -11,10 +11,6 @@ const AllCurrency = () => {
     useEffect(() => {
         axios.get(url).then(response => setCurrencies(response.data));
     }, []);
-    console.log(currencies.length)
-    if (currencies.length === 0) {
-        return <Loading />
-    }
     return (
         <div className='allcurrency'>
             <div className='currencies'>
